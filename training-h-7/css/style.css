@@ -1,0 +1,156 @@
+body {
+  background-color: #0080ff;
+}
+/* Header */
+header {
+  background-color: #0080ff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wraper {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+  .logo-icon {
+    margin-bottom: 14px;
+  }
+}
+
+/*navbar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003366;
+  color: #ffffff;
+}
+
+nav > section {
+  display: flex;
+  color: #ffffff;
+}
+
+/*image*/
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+/*home*/
+.section-container {
+  background-color: #0080ff;
+  width: 1366px;
+  height: 578px;
+}
+.banner-contrainer {
+  height: 258px;
+  border: 1px solid black;
+}
+
+/*faciliti*/
+.facility-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-result {
+  border: 1px solid black;
+  height: 100px;
+}
+
+/*message*/
+.message-us-section {
+  display: flex;
+  color: #ffffff;
+}
+
+.result-container {
+  display: flex;
+  color: #ffffff;
+  text-align: left;
+}
+.text-area {
+  width: 90%;
+  height: 100px;
+}
+
+/*tabel*/
+.tbl {
+  border: 1px solid black;
+  align-content: flex-end;
+}
+.tbl-up > th {
+  background-color: #0080ff;
+}
+/*footer*/
+.footer {
+  text-align: right;
+  color: #ffffff;
+  background-color: #003366;
+  display: block;
+  padding: 1px;
+  height: auto;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.btn {
+  background-color: rgb(0, 191, 255);
+}
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #085f84;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(26, 6, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #00166f;
+}

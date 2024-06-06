@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project RevoU</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo-icon">
+        <img src="img/logo-icon.jpg" alt="logo" />
+      </div>
+      <section>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Our Facilities</a></li>
+          <li><a href="#Message-us">Message US</a></li>
+        </ul>
+      </section>
+    </nav>
+    <hr />
+
+    <section class="section-container">
+      <section id="Home">
+        <header>
+          <h1>Hi Vito, welcome to wabsite</h1>
+        </header>
+        <article>
+          <p>Ini website saya</p>
+          <div class=""></div>
+        </article>
+      </section>
+      <hr />
+      <!-- our facilities-->
+      <section id="facilities">
+        <header>
+          <h1>Our facilities</h1>
+        </header>
+
+        <article class="facility-list">
+          <div>
+            <div
+              style="width: 50px; height: 50px; border: 1px solid black"
+            ></div>
+            <h5>Free Refil</h5>
+          </div>
+
+          <div>
+            <div
+              style="width: 50px; height: 50px; border: 1px solid black"
+            ></div>
+            <h5>Free Refil</h5>
+          </div>
+
+          <div>
+            <div
+              style="width: 50px; height: 50px; border: 1px solid black"
+            ></div>
+            <h5>Free Refil</h5>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!--massage us-->
+      <section id="Message-us">
+        <header>
+          <h1>Messege Us</h1>
+        </header>
+
+        <section class="message-us-section">
+          <!-- form-->
+          <section class="tbl-msg">
+            <form id="myform">
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" />
+              <br />
+              <label for="birthdate">Tanggal Lahir:</label>
+              <input type="date" id="birthdate" name="birthdate" />
+              <br />
+              <label for="gender">Jenis Kelamin:</label>
+              <input type="radio" id="male" name="gender" value="laki-laki" />
+              <label for="male">Laki-Laki</label>
+              <input type="radio" id="female" name="gender" value="perempuan" />
+              <label for="female">Perempuan</label>
+              <br />
+              <label for="message">Pesan:</label>
+              <br />
+              <textarea
+                class="text-area"
+                id="message"
+                name="message"
+              ></textarea>
+              <br />
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </section>
+
+          <!--result-->
+          <section class="result-container">
+            <div class="form-container">
+              <table class="tbl" id="data-table">
+                <section>
+                  <tr class="tbl-up">
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                  </tr>
+                </section>
+                <section>
+                  <tr>
+                    <td>Vito Korengkeng</td>
+                    <td>31 juli 2002</td>
+                    <td>Laki-Laki</td>
+                    <td>Belajar Coding</td>
+                    <td>
+                      <a href="profile-button" class="profile-btn"
+                        >Klik Disini</a
+                      >
+                    </td>
+                    <td>
+                      <a href="delete-button" class="delete-btn">Delete</a>
+                    </td>
+                  </tr>
+                </section>
+              </table>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <div class="footer">
+      <footer>
+        <p>Created by Vito</p>
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.contrainer{
+    border:5px solid #ffcc5c;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contrainer > div{
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: ffeead;
+    border: 2px solid;
+}
