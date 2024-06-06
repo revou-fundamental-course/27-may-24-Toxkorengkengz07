@@ -220,6 +220,7 @@ button.Next {
 .container-achievement h4 {
   margin-bottom: 10px;
 }
+
 /*button scrol balik*/
 
 #myBtn {
@@ -231,7 +232,7 @@ button.Next {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(35, 8, 237);
+  background-color: rgb(60, 36, 245);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -241,6 +242,29 @@ button.Next {
 #myBtn:hover {
   background-color: #4a6fbd;
 }
+
+/* Icon Sosmed */
+.sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.sosmed a {
+  display: inline-block;
+}
+
+.sosmed img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.sosmed img:hover {
+  transform: scale(1.1);
+}
+
 /*responsive mobile*/
 @media only screen and (max-width: 600px) {
   /* General Styles for Mobile */
