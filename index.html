@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--login-->
+    <!--login ini dibuat hanya sekedar login ye bang heheh-->
+    <div class="login-container">
+      <h2>Login Account</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <br />
+      <button onclick="login()">Login</button>
+      <div class="message" id="message"></div>
+    </div>
+    <!--End login-->
+
     <!--Navbar-->
-    <nav>
+    <nav class="hidden" id="main-content">
       <!--navbar icon-->
       <div class="logo-icon">
         <img src="assets/logo-icon.jpg" />
@@ -18,10 +30,11 @@
         <li><a href="#home" class="nav-item">Home</a></li>
         <li><a href="#achievement" class="nav-item">Achievement</a></li>
         <li><a href="#message-us" class="nav-item">Message</a></li>
+        <button class="logout-button" onclick="logout()">Logout</button>
       </section>
     </nav>
 
-    <section class="section">
+    <section class="section hidden" id="main-content">
       <!--home-->
       <section class="home" id="home">
         <header>
@@ -160,9 +173,9 @@
       </section>
       <!--End Message-->
     </section>
-    <hr />
-    <footer class="footer">
-      <p style="text-align: right">© 2024 Created 2024 by Vito</p>
+    <hr class="hidden" id="main-content" />
+    <footer class="footer hidden" id="main-content">
+      <p style="text-align: right">© 2024 Created by Vito</p>
       <!-- Icon Sosmed -->
       <div class="sosmed">
         <a href="https://web.facebook.com/vito.korengkeng31" target="_blank">
@@ -183,7 +196,13 @@
       </div>
       <!-- End Sosmed -->
     </footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+      class="hidden"
+      id="main-content"
+    >
       Back to Top
     </button>
 

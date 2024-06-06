@@ -1,13 +1,35 @@
-// Fungsi untuk mengganti nama
-function replaceName() {
-  // minta user untuk masukkan nama
-  let name = prompt("Masukan Nama anda ", "");
-  // Menampilkan nama yang dimasukkan pengguna ke dalam elemen dengan id "name"
-  document.getElementById("name").innerText = name;
+function login() {
+  // Ambil nilai dari input
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  // Validasi input
+  if (username === "" || password === "") {
+    alert("Username dan Password tidak boleh kosong");
+    return;
+  }
+
+  document.getElementById("name").innerText = username;
+  document.querySelector(".login-container").classList.add("hidden");
+  document.querySelectorAll("#main-content").forEach(function (element) {
+    element.classList.remove("hidden");
+  });
+}
+//function logout
+function logout() {
+  document.getElementById("name").innerText = "";
+
+  // menyembyunikan page utama dan tampilkan kembali form login// seakan mau login(manipulasi)
+  document.querySelector(".login-container").classList.remove("hidden");
+  document.querySelectorAll("#main-content").forEach(function (element) {
+    element.classList.add("hidden");
+  });
 }
 
-replaceName();
-
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 // Handler untuk pengiriman form
 document
   .getElementById("formulir")
@@ -15,7 +37,7 @@ document
     // Mencegah tindakan default dari pengiriman formulir
     event.preventDefault();
 
-    //  tanggal dan waktu saat ini
+    // tanggal dan waktu saat ini
     const now = new Date();
     const dateTimeString = now.toLocaleString();
 
@@ -49,7 +71,6 @@ let currentSlide = 0;
 
 // Function untuk menggerakkan slide
 function moveSlide(direction) {
-  // Mendapatkan elemen slides dan jumlah total slide
   const slides = document.querySelector(".slides");
   const totalSlides = document.querySelectorAll(".slide").length;
 
@@ -63,7 +84,7 @@ function moveSlide(direction) {
 
 // Menginisialisasi posisi slider saat halaman dimuat
 document.addEventListener("DOMContentLoaded", function () {
-  moveSlide(0); // Inisialisasi posisi slider
+  moveSlide(0);
 });
 
 //declarasi buton untuk scrol ke atas
