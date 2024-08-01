@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //declarasi buton untuk scrol ke atas
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("btn-scrol-top");
 
 window.onscroll = function () {
   scrollFunction();

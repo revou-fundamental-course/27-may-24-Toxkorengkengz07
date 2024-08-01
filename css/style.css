@@ -223,7 +223,7 @@ button.Next {
 
 /*button scrol balik*/
 
-#myBtn {
+#btn-scrol-top {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -232,7 +232,7 @@ button.Next {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(60, 36, 245);
+  background: linear-gradient(90deg, #00c9ff 0%, #9175f5 100%);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -264,6 +264,7 @@ button.Next {
 .sosmed img:hover {
   transform: scale(1.1);
 }
+
 .login-container {
   background-color: #3405ed;
   padding: 20px;
@@ -281,24 +282,63 @@ button.Next {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.login-container button {
-  width: calc(100% - 20px);
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
+/* login button gradien*/
+.login-button {
+  background: linear-gradient(90deg, #00c9ff 0%, #9175f5 100%);
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.login-container button:hover {
-  background-color: #0056b3;
+
+.login-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
+.login-button:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 .message {
   margin-top: 20px;
 }
 .hidden {
   display: none;
 }
+
+.logout-button {
+  background: linear-gradient(90deg, #00c9ff 0%, #9175f5 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logout-button:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*
 .logout-button {
   margin: 20px;
   padding: 10px;
@@ -311,6 +351,7 @@ button.Next {
 .logout-button:hover {
   background-color: #d32f2f;
 }
+  */
 /*responsive mobile*/
 @media only screen and (max-width: 600px) {
   /* General Styles for Mobile */

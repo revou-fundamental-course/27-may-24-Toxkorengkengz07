@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vito Web</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="assets/logo-icon.jpg" type="image/x-icon" />
   </head>
   <body>
     <!--login-->
@@ -15,7 +17,9 @@
       <input type="text" id="username" placeholder="Username" />
       <input type="password" id="password" placeholder="Password" />
       <br />
-      <button onclick="login()">Login</button>
+
+      <button class="login-button" onclick="login()">Login</button>
+
       <div class="message" id="message"></div>
     </div>
     <!--End login-->
@@ -197,8 +201,9 @@
       <!-- End Sosmed -->
     </footer>
     <button
+      class="btn-scrol-top"
       onclick="topFunction()"
-      id="myBtn"
+      id="btn-scrol-top"
       title="Go to top"
       class="hidden"
       id="main-content"
